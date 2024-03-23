@@ -28,6 +28,8 @@
     gh
     doppler
     cachix
+    # terraform
+    opentofu
   ];
 
   home.stateVersion = "23.11";
