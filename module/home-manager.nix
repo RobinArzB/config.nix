@@ -30,6 +30,12 @@
     cachix
     # terraform
     opentofu
+    just
+    ocaml
+    python3
+    uv
+    lua51Packages.lua
+    azure-cli
   ];
 
   home.stateVersion = "23.11";
@@ -48,6 +54,10 @@
     syntaxHighlighting = {
       enable = true;
     };
+    completionInit = ''
+      bindkey '^ ' autosuggest-accept
+      bindkey '^n' autosuggest-accept
+    '';
   };
 
   programs.starship = {
@@ -70,6 +80,7 @@
     enable = true;
     userName = "RobinArzB";
     userEmail = "robin.arzinierebaffert@gmail.com";
+    delta.enable = true;
     extraConfig = {
       color.ui = true;
       core.editor = "nvim";
@@ -78,6 +89,11 @@
       pull.rebase = true;
       user.signingkey = "~/.ssh/id_ed25519.pub";
     };
+  };
+
+  programs.atuin = {
+    enable = true;
+    enableZshIntegration = true;
   };
 
   programs.go = {
