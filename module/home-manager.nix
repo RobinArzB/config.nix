@@ -28,7 +28,7 @@
     gh
     doppler
     cachix
-    # terraform
+    terraform
     opentofu
     just
     ocaml
@@ -36,6 +36,9 @@
     uv
     lua51Packages.lua
     azure-cli
+    raycast
+    pwgen
+    wireguard-tools
   ];
 
   home.stateVersion = "23.11";

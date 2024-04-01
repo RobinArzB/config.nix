@@ -50,7 +50,7 @@
     "gp" = "git push";
     "gs" = "git status";
     "gt" = "git tag";
-    "gpu" = "git pull"
+    "gpu" = "git pull";
     "myip" = "curl -s ifconfig.co";
     "k" = "kubectl";
     "tail" = "tail -n 40";
