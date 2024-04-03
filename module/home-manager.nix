@@ -1,4 +1,4 @@
-{ pkgs, config, ... }: {
+{ pkgs, ... }: {
   # add home-manager user settings here
   home.packages = with pkgs; [
     fd
@@ -40,9 +40,18 @@
     pwgen
     wireguard-tools
     cmake
+    ninja
+    automake
+    pkg-config
+    gettext
   ];
 
   home.stateVersion = "23.11";
+
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+  };
 
   programs.direnv = {
     enable = true;
