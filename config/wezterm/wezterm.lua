@@ -68,6 +68,12 @@ config.window_padding = {
 	bottom = 0,
 }
 
+wezterm.on("format-tab-title", function(tab)
+	return {
+		{ Text = string.format(" %d: wezterm ", tab.tab_index + 1) },
+	}
+end)
+
 config.hide_tab_bar_if_only_one_tab = true
 config.tab_bar_at_bottom = true
 config.freetype_load_target = "HorizontalLcd"

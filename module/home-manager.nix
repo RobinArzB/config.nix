@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
   # add home-manager user settings here
   home.packages = with pkgs; [
     fd
@@ -39,6 +39,7 @@
     raycast
     pwgen
     wireguard-tools
+    cmake
   ];
 
   home.stateVersion = "23.11";
