@@ -44,9 +44,18 @@
     automake
     pkg-config
     gettext
+    silicon
+    ollama
   ];
 
   home.stateVersion = "23.11";
+
+  # xdg.configFile = {
+  #   nvim = {
+  #     source = config.lib.file.mkOutOfStoreSymlink ../config/nvim;
+  #     recursive = true;
+  #   };
+  # };
 
   programs.neovim = {
     enable = true;
